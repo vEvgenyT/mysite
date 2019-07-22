@@ -1,3 +1,5 @@
+/*----------------GENERAL---------------------*/
+
 li {
   list-style: none;
   padding: 0;
@@ -16,20 +18,23 @@ li {
 }
 
 .wrapper {
-  min-width: 270px;
-  margin: 0 auto;
-  padding: 0 0 0 40px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  max-width: 270px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
   visibility: hidden;
+  width: 0px;
+  height: 0px;
+  border: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-
-
+/*---------------- MENU ---------------------*/
 .menu__item_fonts {
   font: normal 400 18px/23px 'IBM Plex Sans', sans-serif;
   color: var(--black);
@@ -45,34 +50,38 @@ li {
   height: 1px;
   background-color: var(--white);
   display: block;
-  margin: 0 0 7px 0px;
+}
+
+.menu__icon_top-position {
+  position: absolute;
+  top:0;
+}
+
+.menu__icon_bottom-position {
+  /*margin: 8px 0 0 0;*/
+  position: absolute;
+  bottom: 0;
 }
 
 .menu__icon_position {
   position: fixed;
   top: 15px;
-  left: 10px;
+  left: 5px;
+  width: 17px;
+  height: 10px;
+
 }
 
 
-
-
-
-
-
-
+/*---------------- MAIN ---------------------*/
 .main__title_fonts {
   font: normal 600 30px/32px 'IBM Plex Sans', sans-serif;
   color: var(--grey);
 }
 
 .main__title_style {
-  max-width: 270px;
-  min-width: 130px;
-  margin: 65px 0;
+  margin: 0 0 65px 0;
 }
-
-
 
 .main__subtitle_fonts {
   font: normal 500 15px/19px 'IBM Plex Sans', sans-serif;
@@ -80,11 +89,9 @@ li {
 }
 
 .main__subtitle_style {
-    min-width: 270px;
+
     margin: 65px 0 10px;
 }
-
-
 
 .main__paragraph_fonts {
   font: normal 300 16px/22px 'IBM Plex Sans', sans-serif;
@@ -94,42 +101,29 @@ li {
 }
 
 .main__paragraph_style {
-  min-width: 130px;
-  max-width: 270px;
   padding: 0;
   margin: 0 0 65px;
 }
-
-
 
 .main__image_size {
   max-width: 200px;
 }
 
 .main__image_center {
-  text-align: center;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 65px;
 }
 
 .contact {
   margin-left: 0;
 }
 
-
-
-
-
-
-
-
-
 .main__logo_size {
-  width: 80px;
-  height: 20px;
+  width: 60px;
+  height: 15px;
   position: fixed;
   bottom: 50px;
-  left: -20px;
+  left: -18px;
   transform: rotate(-90deg);
 }
 
@@ -137,14 +131,31 @@ li {
   width: 100%;
 }
 
+
 #checkbox {
   display: none;
 }
 
 
+nav {
+  display: none;
+}
 
+#checkbox:checked ~ nav {
+  display: block;
+}
 
+#checkbox:checked ~ .menu__icon_position .menu__icon_top-position {
+  transform: rotate(45deg);
+  top: 5px;
+  transition-duration: .3s;
+}
 
+#checkbox:checked ~ .menu__icon_position .menu__icon_bottom-position {
+  transform: rotate(-45deg);
+  bottom: 4px;
+  transition-duration: .3s;
+}
 
 
 
