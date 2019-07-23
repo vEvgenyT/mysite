@@ -25,6 +25,12 @@ li {
   margin: 0 auto;
 }
 
+@media (min-width: 375px) {
+  .wrapper {
+    max-width: 318px;
+  }
+}
+
 .visually-hidden {
   visibility: hidden;
   width: 0px;
@@ -36,7 +42,7 @@ li {
 
 /*---------------- MENU ---------------------*/
 .menu__item_fonts {
-  font: normal 400 18px/23px 'IBM Plex Sans', sans-serif;
+  font: normal 400 18px/35px 'IBM Plex Sans', sans-serif;
   color: var(--black);
 }
 
@@ -58,7 +64,6 @@ li {
 }
 
 .menu__icon_bottom-position {
-  /*margin: 8px 0 0 0;*/
   position: absolute;
   bottom: 0;
 }
@@ -69,7 +74,12 @@ li {
   left: 5px;
   width: 17px;
   height: 10px;
+}
 
+@media (min-width: 400px) {
+  .menu__icon_position {
+    left: 12px;
+  }
 }
 
 
@@ -80,7 +90,7 @@ li {
 }
 
 .main__title_style {
-  margin: 0 0 65px 0;
+  margin: 140px 0 65px 0;
 }
 
 .main__subtitle_fonts {
@@ -89,8 +99,7 @@ li {
 }
 
 .main__subtitle_style {
-
-    margin: 65px 0 10px;
+  margin: 65px 0 10px;
 }
 
 .main__paragraph_fonts {
@@ -131,13 +140,23 @@ li {
   width: 100%;
 }
 
+@media (min-width: 400px) {
+  .main__logo_size {
+    width: 80px;
+    height: 20px;
+    left: -18px;
+  }
+
+  .main__image_size {
+    max-width: 250px;
+  }
+}
 
 #checkbox {
   display: none;
 }
 
-
-nav {
+.menu_hidden {
   display: none;
 }
 
