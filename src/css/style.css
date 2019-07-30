@@ -13,18 +13,21 @@ ul, li {
   --black: #000;
 }
 
-
-.bkg {
-  background-color: var(--dark_grey);
-}
-.image {
-  background-image: url(/img/logo_bkg.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  background-attachment: fixed;
+/*.bkg {
   background-size: 280px;
-  background-blend-mode: normal;
+  background: url(/img/logo_bkg.svg) 100% 50% no-repeat fixed var(--dark_grey);
+}*/
 
+body:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: 280px;
+  background: url(/img/logo_bkg.svg) 100% 70% no-repeat fixed var(--dark_grey);
 }
 
 .wrapper {
@@ -32,9 +35,7 @@ ul, li {
   flex-direction: column;
   flex-wrap: nowrap;
   min-width: 270px;
-  /*max-width: 676px;*/
   margin: 0 10px;
-  /*padding: 0 25px;*/
 }
 
 .visually-hidden {
@@ -51,12 +52,19 @@ ul, li {
 
 .img__logo_size {
   width: 70px;
+/*  position: absolute;
+  right: 50px;
+  top: 10px;*/
 }
 
 .menu_state {
   display: flex;
   justify-content: space-between;
   align-items: center;
+/*  position: fixed;
+  height: 40px;
+  background-color: var(--black);
+  width: 100%;*/
 }
 
 .header_color-size {
@@ -87,7 +95,7 @@ ul, li {
 }
 
 .main__paragraph_fonts {
-  font: normal 300 12px/20px 'IBM Plex Sans' sans-serif;
+  font: normal 300 14px/22px 'IBM Plex Sans' sans-serif;
   color: var(--white);
 }
 
