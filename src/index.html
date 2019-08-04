@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-UA">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-UA" id="scroll">
   <head>
 
     <!-- For browsers -->
@@ -74,21 +74,21 @@
     <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body itemscope itemtype="https://schema.org/LocalBusiness" class="color bkg image">
+  <body itemscope itemtype="https://schema.org/LocalBusiness" class="color">
     <noscript>
       <strong>We're sorry but template doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <header class="header_color-size">
+    <header class="header_color-size" id="opened">
       <input type="checkbox" id="checkbox" aria-hidden="true">
       <label for="checkbox" class="menu__icon_position" aria-hidden="true">
         <span class="menu__icon_style menu__icon_top-position"></span>
         <span class="menu__icon_style menu__icon_bottom-position"></span>
       </label>
       <nav class="menu_state">
-        <ul class="vis">
-          <li><a href="https://www.victory.studio" class="menu__item_fonts pos">behance</a></li>
-          <li><a href="https://www.victory.studio" class="menu__item_fonts pos">dribble</a></li>
-          <li><a href="https://www.victory.studio" class="menu__item_fonts pos">contacts</a></li>
+        <ul class="menu__item_position">
+          <li class="menu__item_animation"><a href="https://www.victory.studio" class="menu__item_fonts">behance</a></li>
+          <li class="menu__item_animation"><a href="https://www.victory.studio" class="menu__item_fonts">dribble</a></li>
+          <li class="menu__item_animation"><a href="https://www.victory.studio" class="menu__item_fonts">contacts</a></li>
         </ul>
       <a href="https://www.victory.studio" itemprop="url">
         <img src="img/logo.png" alt="Логотип" itemprop="image" class="img__logo_size">
@@ -105,7 +105,7 @@
             <h3 class="visually-hidden">Откуда я и чем занимаюсь</h3>
             <p itemprop="description" class="main__paragraph_fonts main__text_margin">Живу и работаю в Украине. Занимаюсь разработкой простых и элегантных цифровых решений, находя баланс на стыке технологий и искусства.</p>
           </li>
-          <li>
+          <li class="main__subblock_margin">
             <h3 class="main__subtitle_fonts main__subtitle_margin">У каждого своя философия</h3>
             <p class="main__paragraph_fonts main__paragraph_style">Моя заключается в стремлении к простоте, сложное сделать доступным.</p>
           </li>
@@ -118,11 +118,12 @@
             <h3 class="visually-hidden">Как я работаю</h3>
             <p class="main__paragraph_fonts main__text_margin">Мои клиенты выбирают сердцем. Анализирую потребности не бизнеса, а пользователя и создаю продукт, который вызывает желание им пользоваться. От этого выигрывают все.</p>
           </li>
-            <li>
+            <li class="main__subblock_margin">
               <h3 class="main__subtitle_fonts main__subtitle_margin">Концепция – это фундамент</h3>
               <p class="main__paragraph_fonts">Заказчикам я предлагаю свое видение и философию. Хорошо структурированный цифровой продукт с простым и понятным интерфейсом приносит больше пользы своему владельцу.</p>
             </li>
         </ul>
+        <div class="bkg" aria-hidden="true"></div>
       </section>
       <section class="main__block_margin">
         <h2 class="main__title_fonts main__text_margin">Разработчик со вкусом в типографике и коде</h2>
@@ -134,7 +135,7 @@
           <li>
             <img src="img/fonts.svg" alt="иллюстрация шрифтов" class="main__img_size main__text_margin">
           </li>
-          <li>
+          <li class="main__subblock_margin">
             <h3 class="main__subtitle_fonts main__subtitle_margin">Шрифт — это характер, анимация — это походка</h3>
             <p class="main__paragraph_fonts">Эти два постулата позволяют вызвать эмоции, передать ощущение от продукта к пользователю</p>
           </li>
@@ -147,7 +148,7 @@
             <h3 class="visually-hidden">Какой должна быть верстка</h3>
             <p class="main__paragraph_fonts main__text_margin">Верстка макета должна отвечать трем критериям: быть «доступной», семантичной, легко поддерживаемой.</p>
           </li>
-          <li>
+          <li class="main__subblock_margin">
             <h3 class="main__subtitle_fonts main__subtitle_margin">Чем я занимаюсь</h3>
             <p itemprop="name" class="main__paragraph_fonts">UX дизайн / Графический дизайн / Верстка сайтов / Промо / Портфолио / Лонгрид</p>
           </li>
@@ -157,17 +158,18 @@
         <h3 class="visually-hidden">Контакты</h3>
         <dl class="main__paragraph_fonts">
           <dt class="main__subtitle_fonts main__subtitle_margin">Как со мной связаться</dt>
-          <dd itemprop="telephone" class="contact"><a href="tel:+38012345678" class="main__paragraph_fonts">T: +380 12 34 56 78</a></dd>
-          <dd class="contact"><a href="mailto:hello@victory.studio" itemprop="email" class="main__paragraph_fonts">E: hello@victory.studio</a></dd>
-          <dd itemprop="address" class="contact"><a href="https://goo.gl/maps/9TzEYNat5WEo24E4A" itemprop="hasMap" target="_blank" class="main__paragraph_fonts">A: Ukraine</a></dd>
+          <dd itemprop="telephone" class="contact_margin"><a href="tel:+38012345678" class="main__paragraph_fonts">T: +380 12 34 56 78</a></dd>
+          <dd class="contact_margin"><a href="mailto:hello@victory.studio" itemprop="email" class="main__paragraph_fonts">E: hello@victory.studio</a></dd>
+          <dd itemprop="address" class="contact_margin"><a href="https://goo.gl/maps/9TzEYNat5WEo24E4A" itemprop="hasMap" target="_blank" class="main__paragraph_fonts">A: Ukraine</a></dd>
         </dl>
       </section>
     </main>
-    <footer class="wrapper">
+    <footer class="wrapper" itemscope itemtype="http://schema.org/WebPage">
       <a href="https://www.victory.studio" itemprop="url" class="main__logo_size">
         <img src="img/logo.png" alt="Логотип" itemprop="image" class="img__logo_size">
       </a>
-      <p class="main__paragraph_fonts footer_position">2019</p>
+      <p class="main__footer_fonts footer_position" itemprop="datePublished" content="2019-08-04">© 2019</p>
     </footer>
+    <script src="js/index.min.js"></script>
   </body>
 </html>
