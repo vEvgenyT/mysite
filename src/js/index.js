@@ -12,7 +12,3 @@ checkbox.addEventListener( 'change', function() {
         document.getElementById('scroll').classList.remove('js__no_scroll');
     }
 });
-
-// function blk() {
-//   document.getElementById('scroll').classList.add('js__no_scroll');
-// }
