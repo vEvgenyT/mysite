@@ -15,14 +15,14 @@ ul, li {
 }
 
 .bkg {
-  background-size: 280px;
+  /*background-size: 280px;*/
   /*background: url(/img/logo_bkg.svg) 100% 65% no-repeat fixed var(--dark_grey);*/
   width: 280px;
   height: 100px;
   position: fixed;
-  background-image: url(/img/logo_bkg-1.svg);
+  /*background-image: url(/img/logo_bkg-1.svg);*/
   background-repeat: no-repeat;
-  top: 65%;
+  bottom: 20%;
   right: 0;
   z-index: -9999;
 }
@@ -58,12 +58,20 @@ ul, li {
   position: fixed;
   width: 100vw;
   top: 0;
-  opacity: .9;
   height: 40px;
   transition: all 0.550s cubic-bezier(0.86, 0, 0.07, 1);
   overflow: hidden;
 }
 
+.header_fading:before {
+  content: '';
+  position: fixed;
+  top: 40px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(to bottom,#313639 0,rgba(0,0,0,0) 100%);
+}
 
 .menu__icon_style {
   background-color: var(--white);
@@ -115,7 +123,7 @@ ul, li {
 }
 
 .menu__item_position {
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .img__logo_size {
