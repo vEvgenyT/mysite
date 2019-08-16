@@ -164,17 +164,20 @@ ul, li {
 /*---------------- FONTS ---------------------*/
 
 .main__title_fonts {
-  font: normal 600 28px/36px 'IBM Plex Sans' sans-serif;
+  /*font: normal 600 28px/36px 'IBM Plex Sans' sans-serif;*/
+  font: normal 600 calc(28px + (30 - 28) * ((100vw - 320px) / (1300 - 320)))/36px 'IBM Plex Sans' sans-serif;
   color: var(--grey);
 }
 
 .main__subtitle_fonts {
-  font: normal 500 15px 'IBM Plex Sans' sans-serif;
+  /*font: normal 500 15px 'IBM Plex Sans' sans-serif;*/
+  font: normal 500 calc(15px + (17 - 15) * ((100vw - 320px) / (1300 - 320)))/14px 'IBM Plex Sans' sans-serif;
   color: var(--grey);
 }
 
 .main__paragraph_fonts {
-  font: normal 300 16px/28px 'IBM Plex Sans' sans-serif;
+  /*font: normal 300 16px/28px 'IBM Plex Sans' sans-serif;*/
+  font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/32px 'IBM Plex Sans' sans-serif;
   color: var(--white);
 }
 
@@ -289,16 +292,11 @@ footer > .main__logo_size {
 
 
 
-
-
-
-
-
-
-
 /*---------------- MEDIA ---------------------*/
 
+@media (max-height: 414px) and (orientation: landscape) {
 
+}
 
 /*
 320 1.5 2 2.4 3
