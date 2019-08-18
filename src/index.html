@@ -19,7 +19,7 @@
     <link rel="canonical" href="https://www.victory.studio">
     <meta name="robots" content="notranslate">
     <meta name="keywords" content="разработка сайта под ключ, создание сайта на заказ, ui/ux дизайн сайта, веб разработка, заказать сайт, стоимость сайта, Украина, Мариуполь, веб дизайн сайта, верстка сайта">
-    <meta name="description" content="Я веб разработчик.">
+    <meta name="description" content="Я веб разработчик. Живу и работаю в Украине. Занимаюсь разработкой простых и элегантных цифровых решений, находя баланс на стыке технологий и искусства.">
     <meta name="author" content="victory.studio">
     <meta name="copyright" content="victory.studio">
 
@@ -90,24 +90,24 @@
           <li class="menu__item_animation"><a href="https://www.victory.studio" target="_blank" class="menu__item_fonts">dribble</a></li>
           <li class="menu__item_animation"><a href="#contacts" class="menu__item_fonts">contacts</a></li>
         </ul>
-      <a href="https://www.victory.studio" itemprop="url">
-        <img src="img/logo_new.svg" alt="Логотип" itemprop="image" class="img__logo_size">
-      </a>
+        <a href="https://www.victory.studio" itemprop="url">
+          <img src="img/logo_new.svg" alt="Логотип" itemprop="image" class="img__logo_size">
+        </a>
       </nav>
     </header>
     <main class="wrapper">
       <section class="main__block_start-position">
         <h2 class="main__title_fonts main__text_margin">
-          <span>
-            Привет</span><br>
-            <p class="main__title-animation">
+          <span>Привет</span><br>
+            <!-- <p class="main__title-animation">
             <span>Я</span>
             <span class="main__title-animaton_move">
               <span>разработчик.</span><br>
               <span>художник.</span><br>
               <span>фрилансер</span><br>
             </span>
-          </p>
+          </p> -->
+          <span>Я фрилансер</span>
         </h2>
         <ul>
           <li>
@@ -192,7 +192,7 @@
           </li>
           <li class="main__subblock_margin">
             <h3 class="main__subtitle_fonts main__subtitle_margin">Шрифт — это характер, анимация — это походка</h3>
-            <p class="main__paragraph_fonts">Как походка выделяет человека его из толпы, а характер определяет отношение к нему, так шрифт и анимация делают сайт уникальным. Эти два постулата позволяют вызвать эмоции, передать ощущение от продукта.</p>
+            <p class="main__paragraph_fonts">Как походка выделяет человека из толпы, а характер определяет отношение к нему, так шрифт и анимация делают сайт уникальным. Эти два постулата позволяют вызвать эмоции, передать ощущение от продукта.</p>
           </li>
         </ul>
       </section>
@@ -205,7 +205,7 @@
           </li>
           <li class="main__subblock_margin">
             <h3 itemprop="name" class="main__subtitle_fonts main__subtitle_margin">Графический дизайн сайта</h3>
-            <p class="main__paragraph_fonts">Изучу рынок, выполню проект интерфейса и нарисую дизайн. Отброшу все лишнее и сделаю дизайн с акцентом на функциональность и контент.</p>
+            <p class="main__paragraph_fonts">Изучу рынок, разработаю проект интерфейса. Затем отброшу все лишнее и сделаю дизайн с акцентом на функциональность и контент.</p>
           </li>
         </ul>
       </section>
@@ -224,12 +224,18 @@
         <img src="img/logo.png" alt="Логотип" itemprop="image" class="img__logo_size">
       </a>
       <p class="main__footer_fonts footer_position" itemprop="datePublished" content="2019-08-04">© 2019</p>
+      <section class="orientation">
+        <div class="orientation__phone_size"></div>
+        <span class="orientation_fonts">Разверните телефон вертикально (портретная ориентация)</span>
+      </section>
     </footer>
     <script src="js/index.min.js"></script>
     <script src="js/walkway.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-      ScrollReveal().reveal('.main__paragraph_fonts', {delay: 70, easing: 'ease-in-out', viewFactor: 0.9, distance : '25px', cleanup: true, duration: 1000 });
+      ScrollReveal().reveal('.main__title_fonts', {delay: 50, easing: 'ease-in-out', distance : '20px', cleanup: true, duration: 1000, viewOffset: {bottom: 220} });
+      ScrollReveal().reveal('.main__subblock_margin', {delay: 40, easing: 'ease-in-out', distance : '25px', cleanup: true, duration: 1000, viewOffset: {bottom: 200} });
+      ScrollReveal().reveal('.main__text_margin', {delay: 40, easing: 'ease-in-out', distance : '25px', cleanup: true, duration: 1000, viewOffset: {bottom: 220} });
     </script>
   </body>
 </html>
