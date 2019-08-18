@@ -177,7 +177,7 @@ ul, li {
 
 .main__paragraph_fonts {
   /*font: normal 300 16px/28px 'IBM Plex Sans' sans-serif;*/
-  font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/32px 'IBM Plex Sans' sans-serif;
+  font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/30px 'IBM Plex Sans' sans-serif;
   color: var(--white);
 }
 
