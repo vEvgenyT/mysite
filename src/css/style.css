@@ -45,7 +45,7 @@ ul, li {
 }
 
 .js__no_scroll {
-  overflow-y: hidden; ;
+  overflow-y: hidden;
   height: 100%;
 }
 
@@ -57,20 +57,30 @@ ul, li {
   padding: 0 10px;
   position: fixed;
   width: 100vw;
-  top: 0;
   height: 40px;
   transition: all 0.550s cubic-bezier(0.86, 0, 0.07, 1);
   overflow: hidden;
+  z-index: 1000;
+  transform: translateY(-40px);
+  animation: mov .7s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /*animation-play-state: paused;*/
 }
 
-.header_fading:before {
+@keyframes mov {
+  100% { transform: translateY(0px); }
+}
+
+.body_fading:before {
   content: '';
   position: fixed;
   top: 40px;
   left: 0;
   height: 40px;
   width: 100%;
-  background: linear-gradient(to bottom,#313639 0,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, var(--dark_grey) 0,rgba(0,0,0,0) 100%);
 }
 
 .menu__icon_style {
@@ -80,6 +90,7 @@ ul, li {
   display: block;
   margin: 0 0 8px 0;
   transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-font-smoothing: antialiased;
 }
 
 .menu__icon_position {
@@ -152,6 +163,8 @@ ul, li {
 #checkbox:checked ~ .menu_state > .menu__item_position > .menu__item_animation:nth-child(3) {
   transition-delay: .7s;
 }
+
+
 
 
 /*---------------- MENU ---------------------*/
@@ -308,8 +321,14 @@ footer > .main__logo_size {
 /*---------------- MEDIA ---------------------*/
 
 @media (max-height: 414px) and (orientation: landscape) {
+  html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
    .main__title_fonts, .main__paragraph_fonts, .main__subtitle_fonts, .main__footer_fonts, .header_color-size, .bkg, .main__img_size, .main__block_start-position, .main__block_margin  {
-    display: none;
+    opacity: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .orientation {
     display: flex;
@@ -318,6 +337,8 @@ footer > .main__logo_size {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    top: 20vh;
   }
   .orientation__phone_size {
     width: 70px;
