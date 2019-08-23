@@ -15,6 +15,12 @@ checkbox.addEventListener( 'change', function() {
     }
 });
 
+// setTimeout(function(){
+//   var a = document.getElementsByClassName('main_start');
+//   a[0].classList.add('main__title_fonts');
+//   a[0].classList.add('main__text_margin');
+//   a[0].classList.remove('main_start');
+// }, 1900);
 
 //
 //
