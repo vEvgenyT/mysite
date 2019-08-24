@@ -78,7 +78,7 @@
     <noscript>
       <strong>We're sorry but template doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <header class="header_color-size" id="opened">
+    <header class="header_size header_color header_animation" id="opened">
       <input type="checkbox" id="checkbox" aria-hidden="true">
       <label for="checkbox" class="menu__icon_position" aria-hidden="true">
         <span class="menu__icon_style menu__icon_top-position"></span>
@@ -91,13 +91,13 @@
           <li class="menu__item_animation"><a href="#contacts" class="menu__item_fonts">contacts</a></li>
         </ul>
         <a href="https://www.victory.studio" itemprop="url">
-          <img src="img/logo_new.svg" alt="Логотип" itemprop="image" class="img__logo_size">
+          <img src="img/logo_new.svg" alt="Логотип" itemprop="image" class="img__logo-top_size">
         </a>
       </nav>
     </header>
     <main class="wrapper">
       <section class="main__block_start-position">
-        <h2 class="main__title_fonts main__text_start-margin">
+        <h2 class="main__title_fonts main__text_start-margin main__text_width">
           <span>Привет</span><br>
             <!-- <p class="main__title-animation">
             <span>Я</span>
@@ -109,7 +109,7 @@
           </p> -->
           <span>Я фрилансер</span>
         </h2>
-        <ul>
+        <ul class="main__paragraph_width">
           <li>
             <h3 class="visually-hidden">Откуда я и чем занимаюсь</h3>
             <p itemprop="description" class="main__paragraph_fonts main__text_start-margin">Живу и работаю в Украине. Занимаюсь разработкой простых и элегантных цифровых решений, находя баланс на стыке технологий и искусства.</p>
@@ -121,8 +121,8 @@
         </ul>
       </section>
       <section class="main__block_margin">
-        <h2 class="main__title_fonts main__text_margin">Первоклассный продукт для первоклассных клиентов.</h2>
-        <ul>
+        <h2 class="main__title_fonts main__text_margin main__text_width">Первоклассный продукт для первоклассных клиентов</h2>
+        <ul class="main__paragraph_width">
           <li>
             <h3 class="visually-hidden">Как я работаю</h3>
             <p class="main__paragraph_fonts main__text_margin">Анализирую потребности пользователя, фокусируясь на деталях создаю сайт, который вызывает желание им пользоваться. От этого выигрывают все.</p>
@@ -133,7 +133,7 @@
             </li>
         </ul>
         <div class="bkg" aria-hidden="true">
-          <svg version="1.1" id="logo_bkg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 755 180" enable-background="new 0 0 755 180" xml:space="preserve">
+          <svg version="1.1" id="logo_bkg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 760 185" enable-background="new 0 0 755 180" xml:space="preserve">
             <g opacity="0.35">
   <path id="dot" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M35.218,159.809c0,4.709-1.655,8.631-4.959,11.768
     c-3.308,3.137-7.258,4.707-11.853,4.707c-2.354,0-4.567-0.42-6.641-1.26c-2.074-0.84-3.895-1.99-5.463-3.447
@@ -181,8 +181,8 @@
         </div>
       </section>
       <section class="main__block_margin">
-        <h2 class="main__title_fonts main__text_margin">Разработчик со вкусом в типографике и коде</h2>
-        <ul>
+        <h2 class="main__title_fonts main__text_margin main__text_width">Разработчик со вкусом в типографике и коде</h2>
+        <ul class="main__paragraph_width">
           <li>
             <h3 class="visually-hidden">Этапы разработки</h3>
             <p class="main__paragraph_fonts main__text_margin">Сначала создаю концепцию, затем подбираю шрифт, кегль, начертание, анимацию и микровзаимодействия. Только так и только в такой последовательности.</p>
@@ -197,8 +197,8 @@
         </ul>
       </section>
       <section class="main__block_margin">
-        <h2 class="main__title_fonts main__text_margin" id="tmp">Объединяю бренды с клиентами</h2>
-        <ul>
+        <h2 class="main__title_fonts main__text_margin main__text_width" id="tmp">Объединяю бренды с клиентами</h2>
+        <ul class="main__paragraph_width">
           <li class="main__subblock_margin">
             <h3 itemprop="name" class="main__subtitle_fonts main__subtitle_margin">Разработка сайта</h3>
             <p class="main__paragraph_fonts">Верстаю макеты по трем основным критериям: "доступность", семантичность, поддерживаемость кода.</p>
@@ -221,7 +221,7 @@
     </main>
     <footer class="wrapper" itemscope itemtype="http://schema.org/WebPage">
       <a href="https://www.victory.studio" itemprop="url" class="main__logo_size">
-        <img src="img/logo.png" alt="Логотип" itemprop="image" class="img__logo_size">
+        <img src="img/logo_new.svg" alt="Логотип" itemprop="image" class="img__logo_size">
       </a>
       <p class="main__footer_fonts footer_position" itemprop="datePublished" content="2019-08-04">© 2019</p>
       <section class="orientation">
@@ -231,9 +231,10 @@
     </footer>
     <script src="js/index.min.js"></script>
     <script src="js/walkway.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="js/scrollreveal.min.js"></script>
     <script>
-      ScrollReveal().reveal('.main__text_start-margin', {delay: 1400, easing: 'ease-in-out', distance : '25px', cleanup: true, duration: 1000, viewOffset: {bottom: 200} });
+      ScrollReveal().reveal('.main__text_start-margin', {delay: 1600, easing: 'ease-in-out', distance : '25px', cleanup: true, duration: 1000, viewOffset: {bottom: 200} });
       ScrollReveal().reveal('.main__subblock_margin', {delay: 40, easing: 'ease-in-out', distance : '30px', cleanup: true, duration: 1000, viewOffset: {bottom: 200} });
       ScrollReveal().reveal('.main__text_margin', {delay: 40, easing: 'ease-in-out', distance : '30px', cleanup: true, duration: 1000, viewOffset: {bottom: 220} });
     </script>
