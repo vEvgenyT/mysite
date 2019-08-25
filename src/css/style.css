@@ -80,8 +80,8 @@ ul, li {
 .header_animation {
   transition: all 0.550s cubic-bezier(0.86, 0, 0.07, 1);
   transform: translateY(-40px);
-  animation: mov .7s;
-  animation-delay: 1.2s;
+  animation: mov .8s;
+  animation-delay: 1.8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -267,7 +267,7 @@ ul, li {
 
 /*---------------- FOOTER ---------------------*/
 
-footer > .main__logo_size {
+.wrapper > .main__logo_size {
   display: none;
 }
 
@@ -324,7 +324,7 @@ footer > .main__logo_size {
 
 /*---------------- MEDIA ---------------------*/
 
-@media (max-height: 414px) and (orientation: landscape) {
+@media (max-height: 414px) and (max-width: 800px) and (orientation: landscape) {
   html {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -337,7 +337,7 @@ footer > .main__logo_size {
   .orientation {
     display: flex;
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -361,7 +361,7 @@ footer > .main__logo_size {
     margin: 0 30px;
   }
   .bkg {
-    width: 70vw;
+    width: 65vw;
     left: 0;
   }
   .body_fading:before {
@@ -377,25 +377,53 @@ footer > .main__logo_size {
   .header_size {
     height: 100px;
   }
-  .menu_state > .menu__item_position > .menu__item_animation {
-    opacity: 1;
-    transform: scale(1) translateY(15px) translateX(15px)
+  .menu_state > .menu__item_position > .menu__item_animation:nth-child(1) {
+    animation: apperance-menu .550s 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  .menu_state > .menu__item_position > .menu__item_animation:nth-child(2) {
+    animation: apperance-menu .550s 1.4s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  .menu_state > .menu__item_position > .menu__item_animation:nth-child(3) {
+    animation: apperance-menu .550s 1.2s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes apperance-menu {
+    0%  { transform: scale(.5) translateY(-50px) translateX(-50px); opacity: 0;}
+    100%  { transform: scale(1) translateY(15px) translateX(15px); opacity: 1;}
+  }
+  .img__logo-bottom_size {
+    animation: apperance-logo 1s 2s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    width: 100px;
+    position: fixed;
+    bottom: -30px;
+    left: 30px;
+  }
+  @keyframes apperance-logo {
+    0%  { opacity: 0;}
+    100%  { bottom: 30px; opacity: 1;}
   }
   .header_color {
     background-color: rgba(0,0,0,0);
   }
   .header_animation {
-  transform: translateY(0px);
-  animation: none;
+    transform: translateY(0px);
+    animation: none;
   }
   .menu__item_position {
     margin: 0;
   }
   .main__title_fonts {
-    font: normal 600 calc(46px + (56 - 46) * ((100vw - 600px) / (1300 - 600)))/65px 'IBM Plex Sans' sans-serif;
+    font: normal 600 calc(40px + (46 - 40) * ((100vw - 600px) / (1300 - 600)))/55px 'IBM Plex Sans' sans-serif;
   }
   .main__subtitle_fonts {
-    font: normal 500 calc(17px + (19 - 17) * ((100vw - 600px) / (1300 - 600)))/14px 'IBM Plex Sans' sans-serif;
+    font: normal 500 calc(17px + (19 - 17) * ((100vw - 600px) / (1300 - 600)))/24px 'IBM Plex Sans' sans-serif;
   }
   .main__paragraph_fonts {
     font: normal 300 calc(18px + (20 - 18) * ((100vw - 600px) / (1300 - 600)))/32px 'IBM Plex Sans' sans-serif;
@@ -404,7 +432,7 @@ footer > .main__logo_size {
     line-height: 30px;
   }
   .main__footer_fonts {
-    font: normal 300 10px/20px 'IBM Plex Sans' sans-serif;
+    font: normal 300 14px/20px 'IBM Plex Sans' sans-serif;
   }
   .main__block_margin {
     margin: 0 0 25vh 30vw;
@@ -413,10 +441,74 @@ footer > .main__logo_size {
     margin: 35vh 0 25vh 30vw;
   }
   .main__text_width {
-    max-width: 470px;
+    max-width: 420px;
   }
   .main__paragraph_width {
-    max-width: 460px;
+    max-width: 100%;
+  }
+  .main__paragraph_style {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main__paragraph_style .main__paragraph_justify:nth-child(even) {
+    align-self: flex-end;
+    max-width: 420px;
+  }
+  .main__paragraph_style .main__paragraph_justify:nth-child(odd) {
+    max-width: 420px;
+  }
+  .wrapper > .main__logo_size {
+    display: block;
+  }
+  .menu__item_fonts:hover:after {
+    content: '.com/victory_studio/';
+  }
+  .menu__item_fonts:hover:before {
+    content: 'https://www.';
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main__title_fonts {
+    font: normal 600 calc(46px + (50 - 46) * ((100vw - 600px) / (1300 - 600)))/60px 'IBM Plex Sans' sans-serif;
+  }
+  .bkg {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .main__subtitle_fonts {
+    font: normal 500 calc(17px + (19 - 17) * ((100vw - 600px) / (1440 - 600)))/34px 'IBM Plex Sans' sans-serif;
+  }
+  .main__paragraph_fonts {
+    font: normal 300 calc(18px + (20 - 18) * ((100vw - 600px) / (1440 - 600)))/34px 'IBM Plex Sans' sans-serif;
+  }
+  .bkg {
+    width: 40vw;
+  }
+  .main__paragraph_style .main__paragraph_justify:nth-child(even) {
+    max-width: 620px;
+  }
+  .main__paragraph_style .main__paragraph_justify:nth-child(odd) {
+    max-width: 620px;
+  }
+  .main__text_width {
+    max-width: 700px;
+  }
+  .main__block_margin {
+    margin: 0 0 25vh 0;
+    width: 1440px;
+  }
+  .main__block_start-position {
+    margin: 35vh 0 25vh 0;
+    width: 1440px;
   }
 }
 
