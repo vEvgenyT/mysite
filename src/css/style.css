@@ -15,12 +15,8 @@ ul, li {
 }
 
 .bkg {
-  /*background-size: 280px;*/
-  /*background: url(/img/logo_bkg.svg) 100% 65% no-repeat fixed var(--dark_grey);*/
   width: 87vw;
-  /*height: 100px;*/
   position: fixed;
-  /*background-image: url(/img/logo_bkg-1.svg);*/
   background-repeat: no-repeat;
   bottom: 20%;
   right: 0;
@@ -184,21 +180,18 @@ ul, li {
 /*---------------- FONTS ---------------------*/
 
 .main__title_fonts {
-  /*font: normal 600 28px/36px 'IBM Plex Sans' sans-serif;*/
   font: normal 600 calc(28px + (30 - 28) * ((100vw - 320px) / (1300 - 320)))/36px 'IBM Plex Sans' sans-serif;
   color: var(--grey);
   -webkit-font-smoothing: antialiased;
 }
 
 .main__subtitle_fonts {
-  /*font: normal 500 15px 'IBM Plex Sans' sans-serif;*/
   font: normal 500 calc(15px + (17 - 15) * ((100vw - 320px) / (1300 - 320)))/14px 'IBM Plex Sans' sans-serif;
   color: var(--grey);
   -webkit-font-smoothing: antialiased;
 }
 
 .main__paragraph_fonts {
-  /*font: normal 300 16px/28px 'IBM Plex Sans' sans-serif;*/
   font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/30px 'IBM Plex Sans' sans-serif;
   color: var(--white);
   -webkit-font-smoothing: antialiased;
@@ -233,7 +226,7 @@ ul, li {
 }
 
 .main__block_start-position {
-  margin: 35vh 0 25vh 0;
+  margin: 40vh 0 25vh 0;
 }
 
 .main__subblock_margin {
@@ -261,6 +254,15 @@ ul, li {
   opacity: 0;
 }
 
+.menu__item_fonts:focus,
+.main__paragraph_fonts:focus,
+.main__paragraph_justify:focus,
+.main__subtitle_fonts:focus,
+.main__img_size:focus,
+.main__title_fonts:focus {
+  outline: none;
+}
+
 /*---------------- MAIN ---------------------*/
 
 
@@ -279,48 +281,6 @@ ul, li {
 
 
 
-/*---------------- ANIMATION ---------------------*/
-
-
-
-
-
-/*---------------- ANIMATION ---------------------*/
-
-/*.main__title-animation {
-  display: flex;
-  margin: 5px 0 0 0;
-  flex-direction: row;
-  height: 32px;
-  overflow: hidden;
-}
-
-.main__title-animaton_move {
-  padding: 0 0 0 7px;
-  position: relative;
-  top: 0;
-  animation: move 2.7s cubic-bezier(0.86, 0, 0.07, 1);
-  animation-delay: 1.5s;
-  animation-iteration-count: 1;
-  z-index: -1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes move{
-0%  { top: 0px;}
-40% { top: -32px;}
-100% { top: -64px; }
-}*/
-
-
-
-
-
-
-
-
-
-
 
 /*---------------- MEDIA ---------------------*/
 
@@ -329,7 +289,7 @@ ul, li {
     overflow-y: hidden;
     overflow-x: hidden;
   }
-   .main__title_fonts, .main__paragraph_fonts, .main__subtitle_fonts, .main__footer_fonts, .header_color-size, .bkg, .main__img_size, .main__block_start-position, .main__block_margin  {
+  .main__title_fonts, .main__paragraph_fonts, .main__subtitle_fonts, .main__footer_fonts, .header_color-size, .bkg, .main__img_size, .main__block_start-position, .main__block_margin {
     opacity: 0;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -352,7 +312,7 @@ ul, li {
   }
   .orientation_fonts {
     font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/30px 'IBM Plex Sans' sans-serif;
-  color: var(--white);
+    color: var(--white);
   }
 }
 
@@ -435,10 +395,10 @@ ul, li {
     font: normal 300 14px/20px 'IBM Plex Sans' sans-serif;
   }
   .main__block_margin {
-    margin: 0 0 25vh 30vw;
+    margin: 0 0 25vh 25vw;
   }
   .main__block_start-position {
-    margin: 35vh 0 25vh 30vw;
+    margin: 40vh 0 25vh 25vw;
   }
   .main__text_width {
     max-width: 420px;
@@ -479,7 +439,7 @@ ul, li {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1680px) {
   .wrapper {
     width: 1440px;
     margin: 0 auto;
@@ -489,6 +449,9 @@ ul, li {
   }
   .main__paragraph_fonts {
     font: normal 300 calc(18px + (20 - 18) * ((100vw - 600px) / (1440 - 600)))/34px 'IBM Plex Sans' sans-serif;
+  }
+  .main__title_fonts {
+    line-height: 65px;
   }
   .bkg {
     width: 40vw;
@@ -507,29 +470,33 @@ ul, li {
     width: 1440px;
   }
   .main__block_start-position {
-    margin: 35vh 0 25vh 0;
+    margin: 50vh 0 25vh 0;
     width: 1440px;
   }
 }
 
-/*
-320 1.5 2 2.4 3
-360 1 1.5 1.8 2 2.75 3 4
-414 1.5 2.5 3
+@media only screen and (min-width: 2160px) {
+  .main__subtitle_fonts {
+    line-height: 38px;
+  }
+  .main__paragraph_fonts {
+    line-height: 40px;
+  }
+  .main__title_fonts {
+    line-height: 75px;
+  }
+  .bkg {
+    width: 25vw;
+  }
+}
 
-600 1 1.325 1.5 2
-768 1 1.5 2
-
-1024 1.5 2
-1280
-1440
-2560
-
-*/
-
-
-
-
-
-
-
+@media (hover) {
+  .menu__item_fonts:focus,
+.main__paragraph_fonts:focus,
+.main__paragraph_justify:focus,
+.main__subtitle_fonts:focus,
+.main__img_size:focus,
+.main__title_fonts:focus {
+  outline: 1px solid var(--white);
+}
+}
