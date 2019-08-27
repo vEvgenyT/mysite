@@ -249,11 +249,6 @@ ul, li {
   display: none;
 }
 
-.main_start {
-  margin-top: 100vh;
-  opacity: 0;
-}
-
 .menu__item_fonts:focus,
 .main__paragraph_fonts:focus,
 .main__paragraph_justify:focus,
@@ -428,6 +423,9 @@ ul, li {
   .menu__item_fonts:hover:before {
     content: 'https://www.';
   }
+  .menu__item_fonts:hover {
+    text-decoration: underline;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -498,5 +496,27 @@ ul, li {
 .main__img_size:focus,
 .main__title_fonts:focus {
   outline: 1px solid var(--white);
+}
+}
+
+@media print {
+  .main__text_margin, .main__text_start-margin {
+    margin: 0 0 10px 0;
+}
+
+.main__block_margin {
+  margin: 0 0 5vh 0;
+}
+
+.main__block_start-position {
+  margin: 10vh 0 5vh 0;
+}
+
+.main__subblock_margin {
+  margin: 10px 0 0 0;
+}
+
+.main__subtitle_margin {
+  margin: 0 0 10px 0;
 }
 }
