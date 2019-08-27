@@ -6,12 +6,7 @@ ul, li {
 }
 
 .color {
-  --dark_grey: #313639;
-  --grey: #595d60;
-  --light_grey: #707070;
-  --white: #fff;
-  --black: #000;
-  background-color: var(--dark_grey);
+  background-color: #313639;
 }
 
 .bkg {
@@ -53,7 +48,7 @@ ul, li {
   height: 40px;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(to bottom, var(--dark_grey) 0,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, #313639 0,rgba(0,0,0,0) 100%);
   background: -webkit-linear-gradient(top, rgba(49,54,57,1), rgba(49,54,57,0));
 }
 
@@ -61,7 +56,8 @@ ul, li {
 /*---------------- MENU ---------------------*/
 
 .header_color {
-  background-color: var(--black);
+  background-color: #000
+;
 }
 
 .header_size {
@@ -87,7 +83,8 @@ ul, li {
 }
 
 .menu__icon_style {
-  background-color: var(--white);
+  background-color: #fff
+;
   width: 18px;
   height: 1px;
   display: block;
@@ -176,37 +173,39 @@ ul, li {
 
 
 
-
 /*---------------- FONTS ---------------------*/
 
 .main__title_fonts {
   font: normal 600 calc(28px + (30 - 28) * ((100vw - 320px) / (1300 - 320)))/36px 'IBM Plex Sans' sans-serif;
-  color: var(--grey);
+  color: #595d60;
   -webkit-font-smoothing: antialiased;
 }
 
 .main__subtitle_fonts {
   font: normal 500 calc(15px + (17 - 15) * ((100vw - 320px) / (1300 - 320)))/14px 'IBM Plex Sans' sans-serif;
-  color: var(--grey);
+  color: #595d60;
   -webkit-font-smoothing: antialiased;
 }
 
 .main__paragraph_fonts {
   font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/30px 'IBM Plex Sans' sans-serif;
-  color: var(--white);
+  color: #fff
+;
   -webkit-font-smoothing: antialiased;
 }
 
 .menu__item_fonts {
   text-decoration: none;
   font: normal 400 16px/45px 'IBM Plex Sans' sans-serif;
-  color: var(--white);
+  color: #fff
+;
   -webkit-font-smoothing: antialiased;
 }
 
 .main__footer_fonts {
   font: normal 300 10px/20px 'IBM Plex Sans' sans-serif;
-  color: var(--white);
+  color: #fff
+;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -302,12 +301,14 @@ ul, li {
   .orientation__phone_size {
     width: 70px;
     height: 145px;
-    border: 1px solid var(--black);
+    border: 1px solid #000
+;
     border-radius: 10px;
   }
   .orientation_fonts {
     font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/30px 'IBM Plex Sans' sans-serif;
-    color: var(--white);
+    color: #fff
+;
   }
 }
 
@@ -495,7 +496,8 @@ ul, li {
 .main__subtitle_fonts:focus,
 .main__img_size:focus,
 .main__title_fonts:focus {
-  outline: 1px solid var(--white);
+  outline: 1px solid #fff
+;
 }
 }
 
@@ -520,3 +522,4 @@ ul, li {
   margin: 0 0 10px 0;
 }
 }
+

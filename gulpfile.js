@@ -17,6 +17,9 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     cssnano = require('cssnano'), // сжатие css файлов
     clear = require('del'), // очистка папок
+    svgmin = require('gulp-svgmin'),
+    uncss = require('gulp-uncss'),
+    htmlmin = require('gulp-htmlmin'),
     shorthand = require('gulp-shorthand'); //сокращение стилей для которых доступен shorthand
 const gcc = require('google-closure-compiler').gulp(); // оптимизация и сжатие JS кода
 
@@ -90,6 +93,13 @@ gulp.task('/deploy', async function() {
 
 gulp.task('/html', async function() {
     return gulp.src(['!src/**/_*.html', path.src.html])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest(path.bundles.html));
+});
+
+gulp.task('/min', () => {
+  return gulp.src(path.src.html)
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(path.bundles.html));
 });
 
@@ -219,3 +229,17 @@ gulp.task('/help', function(){
 });
 
 // -= ******************************************************** =- \\
+//
+//
+//
+gulp.task('/svg', function () {
+    return gulp.src(path.src.img)
+        .pipe(svgmin())
+        .pipe(gulp.dest(path.bundles.img));
+});
+
+gulp.task('/min', () => {
+  return gulp.src(path.src.html)
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest(path.bundles.html));
+});
