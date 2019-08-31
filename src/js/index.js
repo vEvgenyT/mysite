@@ -16,8 +16,8 @@ var click = document.getElementById('link');
 var radioButton = document.getElementById('checkbox');
 
   click.onclick = function() {
+    radioButton.checked = false;
     document.getElementById('opened').classList.remove('opened');
         document.getElementById('scroll').classList.remove('js__no_scroll');
         document.getElementById('opened').classList.add('header_fading');
-    radioButton.checked = false;
   };

@@ -182,13 +182,13 @@ ul, li {
 }
 
 .main__subtitle_fonts {
-  font: normal 500 calc(15px + (17 - 15) * ((100vw - 320px) / (1300 - 320)))/14px 'IBM Plex Sans' sans-serif;
+  font: normal 500 calc(15px + (17 - 15) * ((100vw - 320px) / (1300 - 320)))/16px 'IBM Plex Sans' sans-serif;
   color: #595d60;
   -webkit-font-smoothing: antialiased;
 }
 
 .main__paragraph_fonts {
-  font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/30px 'IBM Plex Sans' sans-serif;
+  font: normal 300 calc(16px + (18 - 16) * ((100vw - 320px) / (1300 - 320)))/32px 'IBM Plex Sans' sans-serif;
   color: #fff
 ;
   -webkit-font-smoothing: antialiased;
@@ -376,13 +376,13 @@ ul, li {
     margin: 0;
   }
   .main__title_fonts {
-    font: normal 600 calc(40px + (46 - 40) * ((100vw - 600px) / (1300 - 600)))/55px 'IBM Plex Sans' sans-serif;
+    font: normal 600 calc(40px + (46 - 40) * ((100vw - 600px) / (1300 - 600)))/56px 'IBM Plex Sans' sans-serif;
   }
   .main__subtitle_fonts {
-    font: normal 500 calc(17px + (19 - 17) * ((100vw - 600px) / (1300 - 600)))/24px 'IBM Plex Sans' sans-serif;
+    font: normal 500 calc(17px + (19 - 17) * ((100vw - 600px) / (1300 - 600)))/26px 'IBM Plex Sans' sans-serif;
   }
   .main__paragraph_fonts {
-    font: normal 300 calc(18px + (20 - 18) * ((100vw - 600px) / (1300 - 600)))/32px 'IBM Plex Sans' sans-serif;
+    font: normal 300 calc(18px + (20 - 18) * ((100vw - 600px) / (1300 - 600)))/34px 'IBM Plex Sans' sans-serif;
   }
   .menu__item_fonts {
     line-height: 30px;
@@ -431,7 +431,7 @@ ul, li {
 
 @media only screen and (min-width: 1024px) {
   .main__title_fonts {
-    font: normal 600 calc(46px + (50 - 46) * ((100vw - 600px) / (1300 - 600)))/60px 'IBM Plex Sans' sans-serif;
+    font: normal 600 calc(46px + (50 - 46) * ((100vw - 600px) / (1300 - 600)))/62px 'IBM Plex Sans' sans-serif;
   }
   .bkg {
     width: 50vw;
