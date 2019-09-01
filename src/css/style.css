@@ -419,7 +419,7 @@ ul, li {
     display: block;
   }
   .menu__item_fonts:hover:after {
-    content: '.com/victory_studio/';
+    content: '.com/victory_web_dev/';
   }
   .menu__item_fonts:hover:before {
     content: 'https://www.';
