@@ -418,14 +418,20 @@ ul, li {
   .wrapper > .main__logo_size {
     display: block;
   }
-  .menu__item_fonts:hover:after {
-    content: '.com/victory_web_dev/';
-  }
   .menu__item_fonts:hover:before {
     content: 'https://www.';
   }
   .menu__item_fonts:hover {
     text-decoration: underline;
+  }
+  .menu__item_animation:nth-child(1) > a:hover:after {
+    content: '.com/victory.wdd/';
+  }
+  .menu__item_animation:nth-child(2) > a:hover:after {
+    content: '.com/victoryweb/';
+  }
+  .menu__item_animation:nth-child(3) > a:hover:after {
+    content: '.com/victory_web_dev/';
   }
 }
 
