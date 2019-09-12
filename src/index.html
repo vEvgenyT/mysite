@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="canonical" href="https://www.victory.net.ua">
-    <base href="https://www.victory.net.ua">
+    <!-- <base href="https://www.victory.net.ua"> -->
     <meta name="robots" content="notranslate">
     <meta name="subject" content="веб дизайн и верстка сайтов">
     <meta name="keywords" content="разработка сайта под ключ, создание сайта на заказ, ui/ux дизайн сайта, веб разработка, заказать сайт, стоимость сайта, Украина, Мариуполь, веб дизайн сайта, верстка сайта">
@@ -90,6 +90,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="application/ld+json">
       {"@context": "http://schema.org","@type": "LocalBusiness","address":{"@type": "PostalAddress","addressLocality": "Ukraine","url": "https://www.victory.net.ua/"},"description": "Живу и работаю в Украине. Занимаюсь разработкой простых и элегантных цифровых решений, находя баланс на стыке технологий и искусства.","image": "https://www.victory.net.ua/img/logo_new.svg","priceRange":"500$ - 2000$","email": "admin@victory.net.ua","name": "Victory | Web Design and Development","telephone": "+380 (96) 577 93 28","openingHours": "Пн-Вс 09:00-19:00","geo": {"@type": "GeoCoordinates","latitude": "47.7686988","longitude": "26.8142039"},"hasMap": "https://goo.gl/maps/9TzEYNat5WEo24E4A","sameAs" : [ "https://www.facebook.com/victory.wdd/","https://www.behance.net/victory_web_dev/", "https://www.instagram.com/victoryweb/"]}</script>
     <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Victory | Web Design and Development","url": "https://www.victory.net.ua/","logo": "https://www.victory.net.ua/img/logo_new.svg","contactPoint": {"@type": "ContactPoint","telephone": "+380 (96) 577 93 28","contactType": "customer service"}}</script>
+    <style>
+      @media only screen and (min-width: 600px) {
+        .menu_state > .menu__item_position > .menu__item_animation:nth-child(1) {
+    animation: apperance-menu .550s 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  .menu_state > .menu__item_position > .menu__item_animation:nth-child(2) {
+    animation: apperance-menu .550s 1.4s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  .menu_state > .menu__item_position > .menu__item_animation:nth-child(3) {
+    animation: apperance-menu .550s 1.2s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes apperance-menu {
+    0%  { transform: scale(.5) translateY(-50px) translateX(-50px); opacity: 0;}
+    100%  { transform: scale(1) translateY(15px) translateX(15px); opacity: 1;}
+  }
+      }
+    </style>
   </head>
   <body itemscope itemtype="https://schema.org/LocalBusiness" class="color body_fading">
     <!-- Google Tag Manager (noscript) -->
