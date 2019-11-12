@@ -333,7 +333,7 @@ ul, li {
   .header_size {
     height: 100px;
   }
-  /*.menu_state > .menu__item_position > .menu__item_animation:nth-child(1) {
+  .menu_state > .menu__item_position > .menu__item_animation:nth-child(1) {
     animation: apperance-menu .550s 1.6s cubic-bezier(0.86, 0, 0.07, 1);
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -351,7 +351,7 @@ ul, li {
   @keyframes apperance-menu {
     0%  { transform: scale(.5) translateY(-50px) translateX(-50px); opacity: 0;}
     100%  { transform: scale(1) translateY(15px) translateX(15px); opacity: 1;}
-  }*/
+  }
   .img__logo-bottom_size {
     animation: apperance-logo 1s 2s cubic-bezier(0.86, 0, 0.07, 1);
     animation-fill-mode: forwards;
