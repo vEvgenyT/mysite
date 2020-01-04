@@ -56,7 +56,7 @@ ul, li {
 /*---------------- MENU ---------------------*/
 
 .header_color {
-  background-color: #000
+  background-color: #000;
 ;
 }
 
@@ -431,7 +431,7 @@ ul, li {
     content: '.com/victoryweb/';
   }
   .menu__item_animation:nth-child(3) > a:hover:after {
-    content: '.com/victory_web_dev/';
+    content: '.com/victory-blog/';
   }
 }
 
